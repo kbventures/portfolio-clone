@@ -173,6 +173,8 @@ table {
 	 --oslo-grey: #7F888F;
 	 --grey: grey; 
 	 --mako: #3D4449;
+	 --porcelain: #F5F6F7; 
+
 }
 
 html {
@@ -182,7 +184,7 @@ html {
 
 body {
      box-sizing: border-box;
-     line-height: 1.6;
+     line-height: 1.5;
 	 background-color: var(--white);
 	 font-family: 'Roboto Slab', serif;
 }
@@ -193,12 +195,12 @@ body {
 /*******************************************/
 
 .inner {
-	padding: 0 2rem; 
+	padding: 0 2.4rem; 
 }
 
 
 /******************************************
-/* NAVIGATION & FIXED FOOTER HAMBURGER ICON
+/* NAVIGATION & HAMBURGER MENU
 /*******************************************/
 nav{
 	display: flex; 
@@ -207,18 +209,19 @@ nav{
 
 nav ul {
 	display: flex; 
-	color: var(--cool-grey)
+	color: var(--cool-grey);
+	align-items: center;
 
 }
 
-nav li {
-	padding-right: 1.2rem; 
+nav li:not(:last-child) {
+	padding-right: 1.3rem; 
 }
 
-nav > i {
+nav > span i{
 	color: var(--cool-grey);
 	background-color: var(--metallic-silver-light);
-	padding: .8rem 1.8rem; 
+	padding: 1.8rem 1.8rem; 
 	border-radius:3px; 
 }
 
@@ -232,7 +235,7 @@ header > a {
 	text-decoration: none;
 	color: var(--oslo-grey);
 	display: inline-block; 
-	padding: 2rem 0; 
+	padding: 2.5rem 0 0.4rem; 
 }
 header > a strong {
 	text-decoration: none;
@@ -241,24 +244,138 @@ header > a strong {
 }
 
 
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:var(--porcelain);
+	overflow-x: hidden;
+	padding: 2rem; 
+
+  }
+
+.sidenav i{
+	color: var(--green);
+}
+
+.sidenav h3{
+	border-bottom:var(--green) solid 3px;
+	display: inline-block;
+	color: var(--mako);
+	padding-bottom: 0.5rem;
+	margin-bottom: 3rem;
+}
+
+.sidenav p, .sidenav li{
+	color: var(--oslo-grey)
+}
+
+
+.sidenav li{
+	color: var(--oslo-grey);
+	border-bottom:0.5px solid var(--oslo-grey);
+	padding-bottom: 1rem;
+}
+
+
+  
+  /* .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  } */
+  
+
+
 /******************************************
 /* MAIN
 /*******************************************/
 
 main{
-	padding: 3.6rem 0 1.2rem; 
+	padding: 3.6rem 0 3.6rem; 
+	border-bottom: 2px solid var(--metallic-silver-light);
 }
 
 main img{
-	width: 100%;
-	border-radius: 3px; 
+	width: 100%; 
 	padding: 1rem 0 3rem 0;
 }
 
 main h1 {
 	color: var(--mako);
 	font-weight: 700;
+	margin-bottom: 1.2rem; 
 }
+
+main p{
+	color: var(--oslo-grey);
+	margin-bottom: 2.4rem;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+}
+
+
+
+
+/******************************************
+/* Projects
+/*******************************************/
+
+
+.projects {
+	padding-top: 3.6rem;
+
+}
+
+section > h2{
+	color: var(--mako);
+	border-bottom:var(--green) solid 3px;
+	display: inline-block;
+	padding-bottom: 1rem;;
+	margin-bottom: 3.6rem; 
+
+
+}
+
+.project img{
+	width: 100%;
+}
+
+.project{
+	margin-bottom: 3rem;  
+	padding: 0 0 0rem; 
+	border-bottom: 2px solid var(--metallic-silver-light);
+}
+
+.project h3{
+	padding-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	color:var(--mako);
+	font-weight: 700;
+}
+
+.project h3 + div {
+	margin-bottom: 2.4rem;
+}
+
+.project p {
+	color: var(--oslo-grey)
+}
+
+.project strong {
+	color: var(--mako);
+	font-weight: 600;
+}
+
+
+
+
 
 
 /******************************************
@@ -283,6 +400,36 @@ main h1 {
 	font-size: 2.4rem; ;
 }
 
+main p {
+	font-size: 1rem;
+}
+
+
+header > a {
+	font-size: 1.5rem; ;
+}
+
+section > h2 {
+	font-size: 2rem;
+}
+
+
+.sidenav h3 {
+	font-size: 1.5rem;
+}
+
+.sidenav i {
+	font-size: 1.5rem;
+}
+
+.project h3 {
+	font-size: 1.5rem;
+}
+
+.project p, .project strong{
+	font-size: 1.2rem;
+}
+
 
 
 /******************************************
@@ -291,25 +438,17 @@ main h1 {
 
 .button {
 	text-decoration: none;
-	padding-bottom: 2rem 10rem; 
+	padding: 0.75rem 2rem; 
 	color: var(--green);
 	text-transform: uppercase;
 	font-size: 1rem; 
-	font-weight: 700;
+	font-weight: 500;
 	border-radius: 3px;
-	border: 3px solid var(--green);
+	border: 2px solid var(--green);
 	display: inline-block;
 }
 
 
-header > a {
-	font-size: 1.5rem; ;
-}
-
-
-main h1 {
-	font-size: 2.4rem; ;
-}
 
 
 
