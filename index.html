@@ -23,15 +23,23 @@
         <header>
 
             <section id="mySidenav" class="sidenav">
+                <form action="/" method="GET" class="form">
+                    <input type="search" placeholder="Search" class="search-field" />
+                    <button type="submit" class="search-button">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    </button>
+                </form>
                 <h3>Get in touch</h3>
                 <p>Reach out and let's start a conversation</p>
-                <ul>
-                    <li><i class="fa-solid fa-envelope"></i>ShawnCharles@protonmail.com</li>
-                    <li><i class="fa-brands fa-twitter"></i>ShawnCharles.com/Twiter</li>
-                    <li><i class="fa-brands fa-linkedin"></i>ShawnCharles.com/linkedin</li>
-                    <li><i class="fa-brands fa-github"></i>ShawnCharles.com/Github</li>
-                </ul>
-                <p>&copy CharlesCreativeContent. All rights reserved.</p>
+                <div>
+                    <ul>
+                        <li class="envelope-icon"><span>ShawnCharles@protonmail.com</span></li>
+                        <li class="twitter-icon"><span>ShawnCharles.com/Twiter</span></li>
+                        <li class="linkedin-icon"><span>ShawnCharles.com/linkedin</span></li>
+                        <li class="github-icon"><span>ShawnCharles.com/Github</span></li>
+                    </ul>
+                </div>
+                <p><em>&copy CharlesCreativeContent.</em> All rights reserved.</p>
             </section>
 
 
@@ -99,7 +107,7 @@
     </div>
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "260px";
+            document.getElementById("mySidenav").style.display = "block";
         }
 
         function closeNav() {
