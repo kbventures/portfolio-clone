@@ -204,7 +204,7 @@ body {
 /*******************************************/
 nav{
 	display: flex; 
-	justify-content: space-between;
+	justify-content:space-between;
 }
 
 nav ul {
@@ -259,10 +259,6 @@ header > a strong {
 
   }
 
-.sidenav i{
-	color: var(--green);
-}
-
 .sidenav h3{
 	border-bottom:var(--green) solid 3px;
 	display: inline-block;
@@ -304,9 +300,7 @@ header > a strong {
 
 }
 
-/* .sidenav div {
-	display: flex;
-} */
+
 
 .sidenav ul{
 	margin: 0 auto; 
@@ -370,18 +364,21 @@ header > a strong {
 }
 
   
-  /* .sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-  } */
+.sidenav > span {
+margin-top: 2rem; 
+display: flex;
+justify-content: center;
+}
+.sidenav > span i {
+	color: var(--cool-grey);
+	background-color: var(--metallic-silver-light);
+	padding: 1.8rem 1.8rem; 
+}
 
 
 
 
-	.form{
+	/* .form{
 	  width: 100%;
 	  text-align: left;
 	  margin-bottom: 2rem;
@@ -411,7 +408,7 @@ header > a strong {
   }
   
   
-  /* .search-button img {
+  .search-button img {
 	width: 2rem;
 	height: 2rem;
 	object-fit: cover;
@@ -459,6 +456,7 @@ main p{
 
 }
 
+
 section > h2{
 	color: var(--mako);
 	border-bottom:var(--green) solid 3px;
@@ -491,12 +489,17 @@ section > h2{
 }
 
 .project p {
-	color: var(--oslo-grey)
+	color: var(--oslo-grey);
+	font-family: 'Open Sans';
 }
 
 .project strong {
 	color: var(--mako);
 	font-weight: 600;
+}
+
+.project > div a {
+	margin-top: 2.5rem;
 }
 
 
@@ -615,13 +618,39 @@ Ems are the best option for media queries
 @media only screen and (min-width: 22.5em){
 }
 
+
+/* 480px */
+@media only screen and (min-width: 30em) {
+.projects > div {
+	display: inline-flex; 
+	flex-wrap: wrap; 
+	/* gap: 2rem; */
+	justify-content: space-between;
+}
+
+div .project{
+	width: 45%;
+}
+
+.inner{
+	padding: 0 2.6rem;
+}
+
+}
+
 /* 600px */
 @media only screen and (min-width: 37.5em) {
+	.inner{
+		padding: 0 2.6rem;
+	}
 }
 
 
-/* 900px */
-@media only screen and (min-width: 43em) {
+/* 736px */
+@media only screen and (min-width: 46em) {
+	.inner{
+		padding: 0 2.6rem;
+	}
 }
 
 
@@ -636,4 +665,8 @@ Ems are the best option for media queries
 
 
 /* 1800 px */
-@media only screen and (min-width: 112.5em) {}
+@media only screen and (min-width: 105em) {
+	.inner{
+		padding: 0 7.3rem;
+	}
+}
