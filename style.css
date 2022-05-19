@@ -384,7 +384,7 @@ justify-content: center;
 
 
 .special {
-	position: absolute;
+	position: fixed;
 	left:27.5rem;  
 }
 
@@ -516,6 +516,31 @@ section > h2{
 }
 
 
+.img-wrapper {
+    display: block;
+    overflow: hidden;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.project img {
+    transition: all .2s ease;
+}
+.project img:hover {
+    transform:scale(1.1);
+}
+
+
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+.about p{
+	font-family: "Open", sans-serif;
+}
+
+
 
 
 
@@ -572,6 +597,10 @@ section > h2 {
 	font-size: 1.2rem;
 }
 
+
+.about p{
+	font-size: 1.3rem;
+}
 
 
 /******************************************
