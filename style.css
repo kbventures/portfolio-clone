@@ -363,6 +363,9 @@ header > a strong {
 
 }
 
+
+
+
   
 .sidenav > span {
 margin-top: 2rem; 
@@ -375,10 +378,20 @@ justify-content: center;
 	padding: 1.8rem 1.8rem; 
 }
 
+.toggle{
+	display:none; 
+}
+
+
+.special {
+	position: absolute;
+	left:27.5rem;  
+}
 
 
 
-	/* .form{
+
+	.form{
 	  width: 100%;
 	  text-align: left;
 	  margin-bottom: 2rem;
@@ -412,7 +425,7 @@ justify-content: center;
 	width: 2rem;
 	height: 2rem;
 	object-fit: cover;
-  } */
+  }
   
 
 
