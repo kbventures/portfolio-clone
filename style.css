@@ -364,25 +364,9 @@ header > a strong {
 }
 
 
-.sidenav > span {
-	position: absolute;
-	top: 0;
-	left: 22.5rem; 
-	margin-top: 2rem; 
-	/* display: flex;
-	justify-content: center; */
-	}
-	.sidenav > span i {
-		color: var(--cool-grey);
-		background-color: var(--metallic-silver-light);
-		padding: 1.8rem 1.8rem; 
-	}
-
-
-
 
   
-/* .sidenav > span {
+ .sidenav > span {
 margin-top: 2rem; 
 display: flex;
 justify-content: center;
@@ -391,9 +375,9 @@ justify-content: center;
 	color: var(--cool-grey);
 	background-color: var(--metallic-silver-light);
 	padding: 1.8rem 1.8rem; 
-} */
+} 
 
-/* .toggle{
+.toggle{
 	display:none; 
 }
 
@@ -401,7 +385,7 @@ justify-content: center;
 .special {
 	position: fixed;
 	left:27.5rem;  
-} */
+}
 
 
 
