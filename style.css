@@ -182,6 +182,61 @@ html {
 }
 
 
+/* 360px */
+@media only screen and (min-width: 22.5em){
+		html{
+			font-size: 65%;
+		}
+}
+
+
+/* 480px */
+@media only screen and (min-width: 30em) {
+		html{
+			font-size: 75%;
+		}
+}
+
+/* 600px */
+@media only screen and (min-width: 37.5em) {
+		html{
+			font-size:  85%;
+		}
+}
+
+
+/* 736px */
+@media only screen and (min-width: 46em) {
+	html{
+		font-size: 95%;
+	}
+}
+
+
+/* 900px */
+@media only screen and (min-width: 56.25em) {
+	html{
+		font-size: 105%;
+	}
+}
+
+
+/* 1200px */
+@media only screen and (min-width: 68.75em) {
+	html{
+		font-size: 115%;
+	}
+}
+
+
+/* 1800 px */
+@media only screen and (min-width: 105em) {
+	html{
+		font-size: 125%;
+	}
+}
+
+
 body {
      box-sizing: border-box;
      line-height: 1.5;
@@ -195,7 +250,19 @@ body {
 /*******************************************/
 
 .inner {
-	padding: 0 2.4rem; 
+	padding: 0 24px; 
+}
+
+@media only screen and (min-width: 46em) {
+	.inner{
+		padding: 0 53px;
+	}
+}
+
+@media only screen and (min-width: 46em) {
+	.inner{
+		padding: 0 73px;
+	}
 }
 
 
@@ -673,25 +740,27 @@ div .project{
 	width: 45%;
 }
 
-.inner{
-	padding: 0 2.6rem;
-}
-
 }
 
 /* 600px */
 @media only screen and (min-width: 37.5em) {
-	.inner{
-		padding: 0 2.6rem;
-	}
+
 }
 
 
 /* 736px */
 @media only screen and (min-width: 46em) {
-	.inner{
-		padding: 0 2.6rem;
+	main{
+		display: flex;
+		flex-direction: row;
 	}
+	
+	main img{
+		width: 55%;
+		padding: 0; 
+		order: 1; 
+	}
+
 }
 
 
@@ -700,14 +769,12 @@ div .project{
 }
 
 
-/* 1200px */
-@media only screen and (min-width: 68.75em) {
+/* 1280px */
+@media only screen and (min-width: 80em) {
 }
 
 
 /* 1800 px */
 @media only screen and (min-width: 105em) {
-	.inner{
-		padding: 0 7.3rem;
-	}
+
 }
