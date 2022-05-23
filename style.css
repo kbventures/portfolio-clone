@@ -259,9 +259,15 @@ body {
 	}
 }
 
-@media only screen and (min-width: 46em) {
+@media only screen and (min-width: 80em) {
 	.inner {
 		padding: 0 73px;
+	}
+}
+
+@media only screen and (min-width: 112em) {
+	.inner {
+		padding: 0 104px;
 	}
 }
 
@@ -451,7 +457,7 @@ nav+a strong {
 
 .special {
 	position: fixed;
-	left: 27.5rem;
+	left: 270px;
 }
 
 
@@ -717,7 +723,15 @@ Ems are the best option for media queries
 
 
 /* 360px */
-@media only screen and (min-width: 22.5em) {}
+@media only screen and (min-width: 22.5em) {
+	.sidenav{
+		width: 288px;
+	}
+
+	.special{
+		left: 293px;
+	}
+}
 
 
 /* 480px */
@@ -752,16 +766,50 @@ Ems are the best option for media queries
 		order: 1;
 	}
 
+	.sidenav{
+		width: 350px;
+	}
+
+	.special{
+		left: 360px;
+	}
+	
+
 }
 
 
 /* 900px */
-@media only screen and (min-width: 56.25em) {}
+@media only screen and (min-width: 56.25em) {
+	.sidenav{
+		width: 390px;
+	}
+
+	.special{
+		left: 400px;
+	}
+}
 
 
 /* 1280px */
-@media only screen and (min-width: 80em) {}
+@media only screen and (min-width: 80em) {
+
+	.sidenav{
+		width: 420px;
+	}
+
+	.special{
+		left: 430px;
+	}
+}
 
 
 /* 1800 px */
-@media only screen and (min-width: 105em) {}
+@media only screen and (min-width: 105em) {
+	.sidenav{
+		width: 450px;
+	}
+
+	.special{
+		left: 460px;
+	}
+}
