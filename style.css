@@ -201,60 +201,6 @@ html {
 }
 
 
-/* 360px */
-/* @media only screen and (min-width: 22.5em) {
-	html {
-		font-size: 65%;
-	}
-} */
-
-
-/* 480px */
-/* @media only screen and (min-width: 30em) {
-	html {
-		font-size: 75%;
-	}
-} */
-
-/* 600px */
-/* @media only screen and (min-width: 37.5em) {
-	html {
-		font-size: 85%;
-	}
-} */
-
-
-/* 736px */
-/* @media only screen and (min-width: 46em) {
-	html {
-		font-size: 95%;
-	}
-} */
-
-
-/* 900px */
-/* @media only screen and (min-width: 56.25em) {
-	html {
-		font-size: 105%;
-	}
-} */
-
-
-/* 1200px */
-/* @media only screen and (min-width: 68.75em) {
-	html {
-		font-size: 115%;
-	}
-} */
-
-
-/* 1800 px */
-/* @media only screen and (min-width: 105em) {
-	html {
-		font-size: 125%;
-	}
-} */
-
 
 body {
 	box-sizing: border-box;
@@ -320,19 +266,23 @@ nav>span i {
 	border-radius: 3px;
 }
 
-nav+a {
+.mediaquery736 a {
 	text-decoration: none;
 	color: var(--oslo-grey);
 	display: inline-block;
-	padding: 25px 0 4px;
+	padding: 25px 0 13px;
 }
 
-nav+a strong {
+.mediaquery736 a strong {
 	text-decoration: none;
 	color: var(--mako);
 	font-weight: 600;
 }
 
+
+.mediaquery736 ul{
+	display: none; 
+}
 
 
 .sidenav {
@@ -826,9 +776,37 @@ Ems are the best option for media queries
 	.sidenav{
 		width: 288px;
 	}
+	.main ul {
+		display: none; 
+	}	
 
+	.mediaquery736 {
+		display: flex;
+		justify-content: space-between;
+	}
 
-	
+	.mediaquery736 ul{
+		display: flex;
+		color:var(--cool-grey);
+		align-items:center;
+	}
+
+	.mediaquery736 li:not(:last-child) {
+		padding-right: 13px;
+	}
+
+	.mediaquery736 a {
+		text-decoration: none;
+		color: var(--oslo-grey);
+		display: inline-block;
+		padding: 25px 0 13px;
+	}
+
+	.mediaquery736 strong {
+		text-decoration: none;
+		color: var(--mako);
+		font-weight: 600;
+	}
 
 }
 
