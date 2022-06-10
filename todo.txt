@@ -1,0 +1,34 @@
+1) Email icon
+2) Test LInkedin icon
+3) Angel List link
+4) From Light To Black Button
+
+
+Need To Update Resume and Angelist To Be Able To
+Get Profile
+
+Change Span Button to Anchor tags and make them accessible
+
+Change Color of ul/li which was last clicked
+
+Responsive Service Section
+
+Responsive Projects Section
+
+Test Every Range And Make sure you have correct pixel community
+
+Add content
+
+ADD HMLT, CSS, JS, React, Node.js Mongo.db And Express logo to larger screen version
+
+Picture for Projects(prognose)
+
+Update Tech Stack For Projects
+
+Fix Side Bar Size On Larger Size
+
+Search bar, what to do.. 
+
+Replace Main Picture With your Own
+
+Change Color Site

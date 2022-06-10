@@ -165,6 +165,8 @@ table {
 /*******************************************/
 :root {
 	--green: green;
+	--green-radioactive: rgb(7, 191, 7);
+	--green-transparent: rgba(0,128,0,0.1);
 	--black: #000000;
 	--white: #ffffff;
 	--metallic-silver-light: #dce3e9;
@@ -252,7 +254,12 @@ nav ul {
 	display: flex;
 	color: var(--cool-grey);
 	align-items: center;
+	text-decoration: none !important;
 
+}
+
+nav ul a:visited{
+	color:var(--cool-grey)
 }
 
 nav li:not(:last-child) {
@@ -281,6 +288,10 @@ nav>span i {
 	text-decoration: none;
 	color: var(--mako);
 	font-weight: 600;
+}
+
+.mediaquery-at-736px a:visited{
+	color:var(--cool-grey)
 }
 
 
@@ -501,6 +512,14 @@ main p {
 	font-weight: 500;
 }
 
+.main a:hover, .main a strong:hover{
+	color: var(--green)
+}
+
+.main ul li:hover{
+	color: var(--green)
+}
+
 
 /******************************************
 /* About Me
@@ -649,7 +668,7 @@ nav>i {
 
 
 .mediaquery-at-736px a {
-	font-size: var(--15px);
+	font-size: var(--16p66);
 	padding-bottom: 14px;
 }
 
@@ -686,7 +705,7 @@ section>h2 {
 } 
 
 .project h3 {
-	font-size: var(--16p66);
+	font-size: var(--15px);
 }
 
 .projects h2{
@@ -737,6 +756,10 @@ font-size: var(--18px);
 	display: inline-block;
 }
 
+.button:hover{
+	background-color: var(--green-transparent);
+}
+
 
 .button-resume{
 	text-decoration: none;
@@ -749,6 +772,11 @@ font-size: var(--18px);
 	border: 2px solid var(--green);
 	display: inline-block;
 	background-color: var(--green);
+}
+
+
+.button-resume:hover{
+	background-color: var(--green-transparent);
 }
 
 
