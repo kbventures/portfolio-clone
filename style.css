@@ -446,7 +446,7 @@ nav>span i {
 	border: solid 1px rgba(210, 215, 217, 0.75);
 	width: 100%;
 	padding: 10px 10px 10px 10px;
-	border-radius: var(--3p75px);
+	border-radius: 3.75px;
 	outline: none;
 }
 
@@ -499,6 +499,18 @@ main p {
 	margin-bottom: var(--24px);
 	letter-spacing: 2.5px;
 	font-weight: 500;
+}
+
+
+/******************************************
+/* About Me
+/*******************************************/
+
+
+.about-me p {
+	font-family: "Open Sans",sans-serif;
+	line-height: 1.6;
+	font-size: var(--12px);
 }
 
 
@@ -576,6 +588,42 @@ section>h2 {
 .project img:hover {
 	transform: scale(1.1);
 }
+
+
+/******************************************
+/* SERVICES
+/*******************************************/
+
+
+.services{
+	padding-top: 36px;
+	border-bottom: 2px solid var(--metallic-silver-light);
+
+}
+
+.circle-icon {
+    background: var(--white);
+    padding:18px;
+    border-radius: 50%;
+	border: 1px solid var(--oslo-grey);
+	color: green;
+}
+
+
+.service i {
+	margin: 0 0 18px; 
+}
+
+
+.service h3{
+	margin: 0 0 var(--15px);
+}
+
+.service p{
+	color: var(--oslo-grey);
+	margin: 0 0 var(--24px);
+}
+
 
 /******************************************
 /* TYPOGRAPHY
@@ -655,6 +703,23 @@ section>h2 {
 	font-size: var(--13px);
 }
 
+.services h2{
+font-size: var(--18px);
+}
+
+.service h3{
+	font-size: var(--15px);
+}
+
+.service p{
+	font-family: "Open sans", sans-serif;
+	font-size: var(--12px);
+}
+
+
+.service i {
+	font-size: var(--20px);
+}
 
 /******************************************
 /* Button
@@ -671,6 +736,23 @@ section>h2 {
 	border: 2px solid var(--green);
 	display: inline-block;
 }
+
+
+.button-resume{
+	text-decoration: none;
+	padding: 7.5px 20px;
+	color: var(--white);
+	text-transform: uppercase;
+	font-size: var(--10px);
+	font-weight: 500;
+	border-radius: 3px;
+	border: 2px solid var(--green);
+	display: inline-block;
+	background-color: var(--green);
+}
+
+
+
 
 
 
@@ -716,7 +798,7 @@ Ems are the best option for media queries
 	}
 
 	.special{
-		left: 293px;
+		left: 285px;
 	}
 	.main nav + a {
 		font-size: var(--16p66);
@@ -801,6 +883,39 @@ Ems are the best option for media queries
 		padding-right: 13px;
 	}
 
+
+
+	nav {
+		display: block; 
+		position: relative;
+	}
+
+	/* .main nav span i{
+		position: absolute !important;
+		top: 10px;
+		left: -50px;
+		color:var(--green);
+		background-color: white;
+		font-size: 25px;
+	} */
+
+
+		.main nav span + span i{
+		position: absolute !important;
+		top: 10px;
+		left: -50px;
+		color:var(--green);
+		background-color: white;
+		font-size: 25px;
+	}
+
+
+	.main nav > span i{
+		color:var(--green);
+		background-color: white;
+		font-size: 25px;
+	}
+
 }
 
 
@@ -828,13 +943,14 @@ Ems are the best option for media queries
 		display: none; 
 	}
 
+	.toggle{
+		display: none; 
+	}
+
 	.sidenav{
 		width: 420px;
 	}
 
-	.special{
-		display: none; 
-	}
 
 	body{
 		overflow: hidden;
