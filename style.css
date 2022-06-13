@@ -252,15 +252,14 @@ nav {
 
 nav ul {
 	display: flex;
-	color: var(--cool-grey);
 	align-items: center;
-	text-decoration: none !important;
-
 }
 
-nav ul a:visited{
-	color:var(--cool-grey)
+nav ul li a {
+	color:var(--cool-grey);
+	text-decoration: none; 	
 }
+
 
 nav li:not(:last-child) {
 	padding-right: 13px;

@@ -1,15 +1,9 @@
-1) Email icon
-2) Test LInkedin icon
-3) Angel List link
-4) From Light To Black Button
 
+From Light To Black Button
 
-Need To Update Resume and Angelist To Be Able To
-Get Profile
+Update Resume
 
 Change Span Button to Anchor tags and make them accessible
-
-Change Color of ul/li which was last clicked
 
 Responsive Service Section
 
