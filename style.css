@@ -329,6 +329,10 @@ nav>span i {
 	color: var(--oslo-grey);
 }
 
+.sidenav li a:hover{
+	color: var(--green);
+}
+
 
 .sidenav li:nth-child(n+1) {
 	margin-top: var(--10px);
@@ -342,7 +346,7 @@ nav>span i {
 }
 
 
-.sidenav li {
+.sidenav li, .sidenav li a {
 	color: var(--oslo-grey);
 	padding-bottom: 10px;
 }
@@ -409,6 +413,17 @@ nav>span i {
 .sidenav .github-icon:before {
 	font-family: "Font Awesome 5 Brands";
 	content: "\f09b";
+	font-weight: 400;
+	padding-right: 15px;
+	color: var(--green);
+	font-size: var(--15px);
+
+}
+
+
+.sidenav .angellist-icon:before {
+	font-family: "Font Awesome 5 Brands";
+	content: "\f209";
 	font-weight: 400;
 	padding-right: 15px;
 	color: var(--green);
