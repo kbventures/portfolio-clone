@@ -1013,6 +1013,22 @@ Ems are the best option for media queries
 		font-size: var(--10p8px);
 	}
 
+	.about-me p {
+		font-size: var(--13p33px);
+	}
+
+	.about-me a {
+		font-size: var(--10p6px);
+	}
+
+	.services h3{
+		font-size: var(--16p66);
+	}
+
+	.services p{
+		font-size: var(--13p33px);
+	}
+
 	.projects h2 {
 		font-size: var(--20px);
 	}
