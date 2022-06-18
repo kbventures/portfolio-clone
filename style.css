@@ -295,6 +295,8 @@ nav>span i {
 
 
 
+
+
 .sidenav {
 	display: none;
 	height: 100%;
@@ -440,6 +442,10 @@ nav>span i {
 	justify-content: center;
 }
 
+.sidenav ul li a:link {
+	text-decoration: none;
+}
+
 .sidenav>span i {
 	color: var(--cool-grey);
 	background-color: var(--metallic-silver-light);
@@ -533,6 +539,35 @@ main p {
 .main ul li:hover{
 	color: var(--green)
 }
+
+
+/******************************************
+/* Tech Icons
+/*******************************************/
+
+.tech-icons img{
+	width: 50px; 
+	
+}
+.tech-icons div {
+	display: flex; 
+	justify-content: center;
+}
+
+.tech-icons{
+	padding-top: 50px;
+}
+
+.tech-icons > div{
+	margin-bottom: var(--20px);
+}
+
+.tech-icons div img:not(:last-child) {
+    margin-right: 15px;
+}
+
+
+
 
 
 /******************************************
@@ -692,7 +727,11 @@ main h1 {
 }
 
 main p {
-	font-size: var(--10px);
+	font-size: var(--12px);
+}
+
+main a {
+	font-size: var(--9p6px);
 }
 
 
@@ -702,33 +741,46 @@ section>h2 {
 }
 
 
+
+.sidenav h3{
+	font-size: var(--15px);
+}
 .sidenav i {
 	font-size: var(--15px);
 }
 
 .sidenav p{
-	font-size: var(--12px);
+	font-size: var(--10p8px);
 }
 
 .sidenav span {
-	font-size: var(--12px);
+	font-size: var(--10p8px);
 }
 
 .sidenav p:last-child{
 	font-size: var(--9p72px);
 } 
 
+.mediaquery-at-736px a{
+	font-size: var(--15px)	
+}
+
+
 .project h3 {
 	font-size: var(--15px);
 }
 
 .projects h2{
-	font-size: var(--20px);
+	font-size: var(--18px);
 }
 
 .project p,
 .project strong {
 	font-size: var(--12px);
+}
+
+.project a {
+	font-size: var(--9p6px);
 }
 
 
@@ -780,7 +832,7 @@ font-size: var(--18px);
 	padding: 7.5px 20px;
 	color: var(--white);
 	text-transform: uppercase;
-	font-size: var(--10px);
+	font-size: var(--9.6px);
 	font-weight: 500;
 	border-radius: 3px;
 	border: 2px solid var(--green);
@@ -833,11 +885,37 @@ Ems are the best option for media queries
 
 
 
+
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
 	.sidenav{
 		width: 288px;
 	}
+
+	.sidenav h3{
+		font-size: var(--16p66);
+	}
+	.sidenav i {
+		font-size: var(--15px);
+	}
+	
+	.sidenav p{
+		font-size: var(--12px);
+	}
+	
+	.sidenav span {
+		font-size: var(--12px);
+	}
+	
+	.sidenav p:last-child{
+		font-size: var(--10p8px);
+	} 
+
+
+
+
+
+
 
 	.special{
 		left: 285px;
