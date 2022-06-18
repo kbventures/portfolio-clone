@@ -549,7 +549,7 @@ main p {
 /*******************************************/
 
 .tech-icons img {
-	width: 50px;
+	width: 45px;
 
 }
 
@@ -559,15 +559,15 @@ main p {
 }
 
 .tech-icons {
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 .tech-icons>div {
-	margin-bottom: var(--20px);
+	margin-bottom: var(--15px);
 }
 
 .tech-icons div img:not(:last-child) {
-	margin-right: 15px;
+	margin-right: 12px;
 }
 
 
