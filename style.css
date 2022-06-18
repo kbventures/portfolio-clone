@@ -166,7 +166,7 @@ table {
 :root {
 	--green: green;
 	--green-radioactive: rgb(7, 191, 7);
-	--green-transparent: rgba(0,128,0,0.1);
+	--green-transparent: rgba(0, 128, 0, 0.1);
 	--black: #000000;
 	--white: #ffffff;
 	--metallic-silver-light: #dce3e9;
@@ -182,24 +182,25 @@ table {
 html {
 	--3p75px: 0.2343rem;
 	--9p6px: 0.6rem;
-	--9p72px: 0.6075rem; 
+	--9p72px: 0.6075rem;
 	--10px: 0.625rem;
+	--10p6px: 0.66625rem;
 	--10p8px: 0.675rem;
 	--12px: 0.75rem;
-	--12p5px:0.78125rem; 
+	--12p5px: 0.78125rem;
 	--13px: 0.8125rem;
-	--13p33px: 0.8331rem; 
+	--13p33px: 0.8331rem;
 	--15px: 0.9375rem;
 	--16p66: 1.041rem;
 	--18px: 1.125rem;
-	--20px:1.25rem;
-	--23p33px: 1.45rem; 
+	--20px: 1.25rem;
+	--23p33px: 1.45rem;
 	--24px: 1.5rem;
 	--25px: 1.5625rem;
 	--26p66px: 1.66rem;
 	--30px: 1.875rem;
 	--36px: 2.25rem;
-	--43p33px: 2.7rem; 
+	--43p33px: 2.7rem;
 }
 
 
@@ -256,8 +257,8 @@ nav ul {
 }
 
 nav ul li a {
-	color:var(--cool-grey);
-	text-decoration: none; 	
+	color: var(--cool-grey);
+	text-decoration: none;
 }
 
 
@@ -273,7 +274,7 @@ nav>span i {
 }
 
 .mediaquery-at-736px ul {
-	display: none; 
+	display: none;
 }
 
 .mediaquery-at-736px a {
@@ -289,8 +290,8 @@ nav>span i {
 	font-weight: 600;
 }
 
-.mediaquery-at-736px a:visited{
-	color:var(--cool-grey)
+.mediaquery-at-736px a:visited {
+	color: var(--cool-grey)
 }
 
 
@@ -331,7 +332,7 @@ nav>span i {
 	color: var(--oslo-grey);
 }
 
-.sidenav li a:hover{
+.sidenav li a:hover {
 	color: var(--green);
 }
 
@@ -348,7 +349,8 @@ nav>span i {
 }
 
 
-.sidenav li, .sidenav li a {
+.sidenav li,
+.sidenav li a {
 	color: var(--oslo-grey);
 	padding-bottom: 10px;
 }
@@ -532,11 +534,12 @@ main p {
 	font-weight: 500;
 }
 
-.main a:hover, .main a strong:hover{
+.main a:hover,
+.main a strong:hover {
 	color: var(--green)
 }
 
-.main ul li:hover{
+.main ul li:hover {
 	color: var(--green)
 }
 
@@ -545,25 +548,26 @@ main p {
 /* Tech Icons
 /*******************************************/
 
-.tech-icons img{
-	width: 50px; 
-	
+.tech-icons img {
+	width: 50px;
+
 }
+
 .tech-icons div {
-	display: flex; 
+	display: flex;
 	justify-content: center;
 }
 
-.tech-icons{
+.tech-icons {
 	padding-top: 50px;
 }
 
-.tech-icons > div{
+.tech-icons>div {
 	margin-bottom: var(--20px);
 }
 
 .tech-icons div img:not(:last-child) {
-    margin-right: 15px;
+	margin-right: 15px;
 }
 
 
@@ -576,7 +580,7 @@ main p {
 
 
 .about-me p {
-	font-family: "Open Sans",sans-serif;
+	font-family: "Open Sans", sans-serif;
 	line-height: 1.6;
 	font-size: var(--12px);
 }
@@ -663,31 +667,31 @@ section>h2 {
 /*******************************************/
 
 
-.services{
+.services {
 	padding-top: 36px;
 	border-bottom: 2px solid var(--metallic-silver-light);
 
 }
 
 .circle-icon {
-    background: var(--white);
-    padding:18px;
-    border-radius: 50%;
+	background: var(--white);
+	padding: 18px;
+	border-radius: 50%;
 	border: 1px solid var(--oslo-grey);
 	color: green;
 }
 
 
 .service i {
-	margin: 0 0 18px; 
+	margin: 0 0 18px;
 }
 
 
-.service h3{
+.service h3 {
 	margin: 0 0 var(--15px);
 }
 
-.service p{
+.service p {
 	color: var(--oslo-grey);
 	margin: 0 0 var(--24px);
 }
@@ -712,7 +716,7 @@ nav i {
 }
 
 nav>i {
-	font-size:var(--18px);
+	font-size: var(--18px);
 }
 
 
@@ -742,14 +746,15 @@ section>h2 {
 
 
 
-.sidenav h3{
+.sidenav h3 {
 	font-size: var(--15px);
 }
+
 .sidenav i {
 	font-size: var(--15px);
 }
 
-.sidenav p{
+.sidenav p {
 	font-size: var(--10p8px);
 }
 
@@ -757,12 +762,54 @@ section>h2 {
 	font-size: var(--10p8px);
 }
 
-.sidenav p:last-child{
+.sidenav p:last-child {
 	font-size: var(--9p72px);
-} 
+}
 
-.mediaquery-at-736px a{
-	font-size: var(--15px)	
+.mediaquery-at-736px a {
+	font-size: var(--15px)
+}
+
+
+
+
+
+.about p {
+	font-family: "Open", sans-serif;
+}
+
+nav li,
+nav i {
+	font-size: var(--15px);
+}
+
+nav>i {
+	font-size: var(--18px);
+}
+
+
+.mediaquery-at-736px a {
+	font-size: var(--16p66);
+	padding-bottom: 14px;
+}
+
+
+main h1 {
+	font-size: var(--24px);
+}
+
+main p {
+	font-size: var(--12px);
+}
+
+main a {
+	font-size: var(--9p6px);
+}
+
+
+
+section>h2 {
+	font-size: var(--20px);
 }
 
 
@@ -770,7 +817,7 @@ section>h2 {
 	font-size: var(--15px);
 }
 
-.projects h2{
+.projects h2 {
 	font-size: var(--18px);
 }
 
@@ -788,15 +835,15 @@ section>h2 {
 	font-size: var(--13px);
 }
 
-.services h2{
-font-size: var(--18px);
+.services h2 {
+	font-size: var(--18px);
 }
 
-.service h3{
+.service h3 {
 	font-size: var(--15px);
 }
 
-.service p{
+.service p {
 	font-family: "Open sans", sans-serif;
 	font-size: var(--12px);
 }
@@ -822,12 +869,12 @@ font-size: var(--18px);
 	display: inline-block;
 }
 
-.button:hover{
+.button:hover {
 	background-color: var(--green-transparent);
 }
 
 
-.button-resume{
+.button-resume {
 	text-decoration: none;
 	padding: 7.5px 20px;
 	color: var(--white);
@@ -841,7 +888,7 @@ font-size: var(--18px);
 }
 
 
-.button-resume:hover{
+.button-resume:hover {
 	background-color: var(--green-transparent);
 }
 
@@ -888,39 +935,69 @@ Ems are the best option for media queries
 
 /* 360px */
 @media only screen and (min-width: 22.5rem) {
-	.sidenav{
+	.sidenav {
 		width: 288px;
 	}
 
-	.sidenav h3{
+	.sidenav h3 {
 		font-size: var(--16p66);
 	}
+
 	.sidenav i {
 		font-size: var(--15px);
 	}
-	
-	.sidenav p{
+
+	.sidenav p {
 		font-size: var(--12px);
 	}
-	
+
 	.sidenav span {
 		font-size: var(--12px);
 	}
-	
-	.sidenav p:last-child{
+
+	.sidenav p:last-child {
 		font-size: var(--10p8px);
-	} 
-
-
-
-
-
-
-
-	.special{
-		left: 285px;
 	}
-	.main nav + a {
+
+
+	.sidenav .envelope-icon:before {
+		font-size: var(--18px);
+	}
+
+
+	.sidenav .twitter-icon:before {
+		font-size: var(--18px);
+	}
+
+	.sidenav .linkedin-icon:before {
+		font-size: var(--18px);
+	}
+
+	.sidenav .github-icon:before {
+		font-size: var(--18px);
+	}
+
+	.sidenav .angellist-icon:before {
+		font-size: var(--18px);
+	}
+
+	nav ul li i {
+		font-size: var(--16p66);
+	}
+
+	.special {
+		left: 295px;
+	}
+
+
+
+	.mediaquery-at-736px a {
+		font-size: var(--16p66);
+	}
+
+
+
+	.main nav+a {
 		font-size: var(--16p66);
 	}
 
@@ -928,14 +1005,30 @@ Ems are the best option for media queries
 		font-size: var(--26p66px);
 	}
 
-	main p{
+	main p {
 		font-size: var(--13p33px);
+	}
+
+	main .button {
+		font-size: var(--10p8px);
+	}
+
+	.projects h2 {
+		font-size: var(--20px);
+	}
+
+	.project h3 {
+		font-size: var(--16p66);
 	}
 
 	.project p,
 	.project strong {
-	font-size: var(--13p33px);
-}
+		font-size: var(--13p33px);
+	}
+
+	.project a{
+		font-size:var(--10p6px);
+	}
 }
 
 
@@ -975,27 +1068,27 @@ Ems are the best option for media queries
 		order: 1;
 	}
 
-	.sidenav{
+	.sidenav {
 		width: 288px;
 	}
 
 	.main ul {
-		display: none; 
+		display: none;
 	}
 
 	.mediaquery-at-736px {
-		display: flex; 
+		display: flex;
 		justify-content: space-between;
 		padding: 25px 0 4px;
 	}
 
-	.mediaquery-at-736px a{
-		align-self: center;	
+	.mediaquery-at-736px a {
+		align-self: center;
 	}
 
 	.mediaquery-at-736px ul {
 		display: flex;
-		align-items:center;
+		align-items: center;
 		color: var(--cool-grey)
 	}
 
@@ -1006,7 +1099,7 @@ Ems are the best option for media queries
 
 
 	nav {
-		display: block; 
+		display: block;
 		position: relative;
 	}
 
@@ -1020,18 +1113,18 @@ Ems are the best option for media queries
 	} */
 
 
-		.main nav span + span i{
+	.main nav span+span i {
 		position: absolute !important;
 		top: 10px;
 		left: -50px;
-		color:var(--green);
+		color: var(--green);
 		background-color: white;
 		font-size: 25px;
 	}
 
 
-	.main nav > span i{
-		color:var(--green);
+	.main nav>span i {
+		color: var(--green);
 		background-color: white;
 		font-size: 25px;
 	}
@@ -1041,15 +1134,15 @@ Ems are the best option for media queries
 
 /* 900px */
 @media only screen and (min-width: 56.25rem) {
-	.sidenav{
-		width:288px;
+	.sidenav {
+		width: 288px;
 	}
 
-	main h1{
+	main h1 {
 		font-size: var(--43p33px);
 	}
 
-	.projects h2{
+	.projects h2 {
 		font-size: var(--23p33px);
 	}
 
@@ -1059,53 +1152,53 @@ Ems are the best option for media queries
 /* 1280px */
 @media only screen and (min-width: 80rem) {
 
-	.nav-button{
-		display: none; 
+	.nav-button {
+		display: none;
 	}
 
-	.toggle{
-		display: none; 
+	.toggle {
+		display: none;
 	}
 
-	.sidenav{
+	.sidenav {
 		width: 420px;
 	}
 
 
-	body{
+	body {
 		overflow: hidden;
 		height: 100vh;
 	}
 
-	.inner{
+	.inner {
 		overflow-y: auto;
 	}
 
-	.sidenav{
-		display: block; 
-		position: relative; 
+	.sidenav {
+		display: block;
+		position: relative;
 		flex: 1 0 20%;
 	}
 
-	.wrapper{
+	.wrapper {
 		display: flex;
 		height: 100%;
 	}
 
-	.projects h2{
+	.projects h2 {
 		font-size: var(--26p66px);
 	}
-	
+
 }
 
 
 /* 1680 px */
 @media only screen and (min-width: 105rem) {
-	.sidenav{
+	.sidenav {
 		width: 450px;
 	}
 
-	.special{
+	.special {
 		left: 460px;
 	}
 }
