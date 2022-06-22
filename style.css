@@ -201,6 +201,7 @@ html {
 	--30px: 1.875rem;
 	--36px: 2.25rem;
 	--43p33px: 2.7rem;
+	--46p66px: 2.91625rem;
 }
 
 
@@ -853,6 +854,10 @@ section>h2 {
 	font-size: var(--20px);
 }
 
+.tech-icons h2{
+	font-size: var(--18px);
+}
+
 /******************************************
 /* Button
 /*******************************************/
@@ -1025,6 +1030,10 @@ Ems are the best option for media queries
 		font-size: var(--16p66);
 	}
 
+	.services h2{
+		font-size: var(--20px);
+	}
+
 	.services p{
 		font-size: var(--13p33px);
 	}
@@ -1045,6 +1054,15 @@ Ems are the best option for media queries
 	.project a{
 		font-size:var(--10p6px);
 	}
+
+	.tech-icons h2{
+		font-size: var(--20px);
+	}
+
+	.tech-icons img {
+		width: 46px;
+	
+	}
 }
 
 
@@ -1061,6 +1079,27 @@ Ems are the best option for media queries
 		width: 45%;
 	}
 
+	.tech-icons img {
+		width: 47px;
+	
+	}
+
+	.service i {
+		font-size: 36px;
+	}
+
+	.circle-icon{
+		padding: 24px;
+	}
+
+	.service{
+		display: flex; 
+	}
+
+	.service div + div{
+		margin-left: 20px;
+	}
+
 }
 
 /* 600px */
@@ -1071,17 +1110,20 @@ Ems are the best option for media queries
 @media only screen and (min-width: 46em) {
 	main {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 	}
 
 	main h1 {
 		font-size: var(--43p33px);
 	}
 
+	main p{
+		font-size: var(--13p33px);
+	}
+
 	main img {
-		width: 50%;
-		padding: 0;
-		order: 1;
+		align-self: center;
+		width: 70%;
 	}
 
 	.sidenav {
@@ -1145,17 +1187,30 @@ Ems are the best option for media queries
 		font-size: 25px;
 	}
 
+	.services h2, .tech-icons h2, .projects h2 {
+		font-size: var(--23p33px);
+	}
+
+	.tech-icons img {
+		width: 48px;
+	
+	}
+
 }
 
 
-/* 900px */
-@media only screen and (min-width: 56.25rem) {
+/* 980px */
+@media only screen and (min-width: 61.25rem) {
 	.sidenav {
 		width: 288px;
 	}
 
+	main img {
+		width: 60%;
+	}
+
 	main h1 {
-		font-size: var(--43p33px);
+		font-size: var(--46p66px);
 	}
 
 	.projects h2 {
@@ -1205,6 +1260,11 @@ Ems are the best option for media queries
 		font-size: var(--26p66px);
 	}
 
+	.tech-icons img {
+		width: 49px;
+	
+	}
+
 }
 
 
@@ -1216,5 +1276,12 @@ Ems are the best option for media queries
 
 	.special {
 		left: 460px;
+	}
+
+
+
+	.tech-icons img {
+		width: 50px;
+	
 	}
 }
