@@ -4,15 +4,7 @@ Update Resume
 
 Change Span Button to Anchor tags and make them accessible
 
-Responsive Service Section
-
-Responsive Projects Section
-
-Test Every Range And Make sure you have correct pixel community
-
-Add content
-
-ADD HMLT, CSS, JS, React, Node.js Mongo.db And Express logo to larger screen version
+Responssive up to 1279px;
 
 Picture for Projects(prognose)
 
