@@ -556,6 +556,7 @@ main p {
 
 .tech-icons div {
 	display: flex;
+	flex-wrap: wrap; 
 	justify-content: center;
 }
 
@@ -567,8 +568,9 @@ main p {
 	margin-bottom: var(--15px);
 }
 
-.tech-icons div img:not(:last-child) {
-	margin-right: 12px;
+.tech-icons div img {
+	margin-right: 14px;
+	margin-bottom: 18px;
 }
 
 
@@ -1089,7 +1091,9 @@ Ems are the best option for media queries
 	}
 
 	.circle-icon{
-		padding: 24px;
+		padding: 18
+		
+		px;
 	}
 
 	.service{
@@ -1098,6 +1102,11 @@ Ems are the best option for media queries
 
 	.service div + div{
 		margin-left: 20px;
+	}
+
+	.tech-icons img {
+		width: 48px;
+	
 	}
 
 }
@@ -1192,7 +1201,7 @@ Ems are the best option for media queries
 	}
 
 	.tech-icons img {
-		width: 48px;
+		width: 49px;
 	
 	}
 
@@ -1205,8 +1214,8 @@ Ems are the best option for media queries
 		width: 288px;
 	}
 
-	main img {
-		width: 60%;
+	main img, main section {
+		width: 45%;
 	}
 
 	main h1 {
@@ -1216,6 +1225,19 @@ Ems are the best option for media queries
 	.projects h2 {
 		font-size: var(--23p33px);
 	}
+
+	.tech-icons img {
+		width: 50px;
+	
+	}
+
+	main{
+		display: flex; 
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+
 
 }
 
@@ -1261,7 +1283,7 @@ Ems are the best option for media queries
 	}
 
 	.tech-icons img {
-		width: 49px;
+		width: 52px;
 	
 	}
 
@@ -1281,7 +1303,7 @@ Ems are the best option for media queries
 
 
 	.tech-icons img {
-		width: 50px;
+		width: 55px;
 	
 	}
 }
