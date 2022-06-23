@@ -1237,6 +1237,15 @@ Ems are the best option for media queries
 		justify-content: space-between;
 	}
 
+	.services > div {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+
+	.services .service{
+		flex: 1 0 45%;
+	}
 
 
 }
