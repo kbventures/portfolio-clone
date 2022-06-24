@@ -3,17 +3,14 @@ From Light To Black Button
 Update Resume
 
 Change Span Button to Anchor tags and make them accessible
+Add Buttons at larger media content
 
-Responssive up to 1279px;
+Services section play around with growth(Look at original)
 
 Picture for Projects(prognose)
 
 Update Tech Stack For Projects
 
-Fix Side Bar Size On Larger Size
-
-Search bar, what to do.. 
+Search bar, what to do..  REMOVE?
 
 Replace Main Picture With your Own
-
-Change Color Site

@@ -186,14 +186,19 @@ html {
 	--10px: 0.625rem;
 	--10p6px: 0.66625rem;
 	--10p8px: 0.675rem;
+	--11p88px: 0.7425rem; 
 	--12px: 0.75rem;
 	--12p5px: 0.78125rem;
 	--13px: 0.8125rem;
 	--13p33px: 0.8331rem;
+	--14p66px: 0.9162rem;
 	--15px: 0.9375rem;
 	--16p66: 1.041rem;
+	--17p33px: 1.08rem;
 	--18px: 1.125rem;
+	--19p5px: 1.21875rem;
 	--20px: 1.25rem;
+	--21p66px: 1.353rem;
 	--23p33px: 1.45rem;
 	--24px: 1.5rem;
 	--25px: 1.5625rem;
@@ -202,6 +207,8 @@ html {
 	--36px: 2.25rem;
 	--43p33px: 2.7rem;
 	--46p66px: 2.91625rem;
+	--56px: 3.5rem;
+	--69px: 4.31rem;
 }
 
 
@@ -517,9 +524,14 @@ main {
 	border-bottom: 2px solid var(--metallic-silver-light);
 }
 
-main img {
-	width: 100%;
-	padding: 10px 0 30px 0;
+
+main img{
+	border-radius: 50%;
+	width:80%;
+	display: block;
+	margin: 0 auto; 
+	padding: 0 0 30px 0;
+
 }
 
 main h1 {
@@ -688,6 +700,7 @@ section>h2 {
 .service i {
 	margin: 0 0 18px;
 }
+
 
 
 .service h3 {
@@ -1020,6 +1033,12 @@ Ems are the best option for media queries
 		font-size: var(--10p8px);
 	}
 
+	main img{
+		border-radius: 50%;
+		width:80%;
+	}
+	
+
 	.about-me p {
 		font-size: var(--13p33px);
 	}
@@ -1091,9 +1110,7 @@ Ems are the best option for media queries
 	}
 
 	.circle-icon{
-		padding: 18
-		
-		px;
+		padding: 18px;
 	}
 
 	.service{
@@ -1109,10 +1126,15 @@ Ems are the best option for media queries
 	
 	}
 
+
 }
 
 /* 600px */
-@media only screen and (min-width: 37.5rem) {}
+@media only screen and (min-width: 37.5rem) {
+	main img{
+		width: 60%;
+	}
+}
 
 
 /* 736px */
@@ -1130,10 +1152,7 @@ Ems are the best option for media queries
 		font-size: var(--13p33px);
 	}
 
-	main img {
-		align-self: center;
-		width: 70%;
-	}
+
 
 	.sidenav {
 		width: 288px;
@@ -1170,15 +1189,6 @@ Ems are the best option for media queries
 		position: relative;
 	}
 
-	/* .main nav span i{
-		position: absolute !important;
-		top: 10px;
-		left: -50px;
-		color:var(--green);
-		background-color: white;
-		font-size: 25px;
-	} */
-
 
 	.main nav span+span i {
 		position: absolute !important;
@@ -1205,6 +1215,19 @@ Ems are the best option for media queries
 	
 	}
 
+
+
+	.circle-icon {
+		padding: 20px;
+	}
+	
+	
+	.service i {
+		font-size: 42px;
+	}
+	
+
+
 }
 
 
@@ -1215,12 +1238,13 @@ Ems are the best option for media queries
 	}
 
 	main img, main section {
-		width: 45%;
+		width: 50%;
 	}
 
 	main h1 {
-		font-size: var(--46p66px);
+		font-size: var(--56px);
 	}
+
 
 	.projects h2 {
 		font-size: var(--23p33px);
@@ -1247,6 +1271,15 @@ Ems are the best option for media queries
 		flex: 1 0 45%;
 	}
 
+	.circle-icon {
+		padding: 22px;
+	}
+	
+	
+	.service i {
+		font-size: 48px;
+	}
+
 
 }
 
@@ -1258,12 +1291,66 @@ Ems are the best option for media queries
 		display: none;
 	}
 
+	main h1 {
+		font-size: var(--56px);
+	}
+
+	main p {
+		font-size: var(--14p66px);
+	}
+
+	main .button {
+		font-size: var(--11p88px);
+	}
+
 	.toggle {
 		display: none;
 	}
 
 	.sidenav {
 		width: 420px;
+	}
+
+	.sidenav h3{
+		font-size: var(--18px);
+	}
+
+	.sidenav i {
+		font-size: var(--18px);
+	}
+
+	.sidenav p {
+		font-size: var(--13p33px);
+	}
+
+	.sidenav span {
+		font-size: var(--13p33px);
+	}
+
+	.sidenav p:last-child {
+		font-size: var(--11p88px);
+	}
+
+
+	.sidenav .envelope-icon:before {
+		font-size: var(--20px);
+	}
+
+
+	.sidenav .twitter-icon:before {
+		font-size: var(--20px);
+	}
+
+	.sidenav .linkedin-icon:before {
+		font-size: var(--20px);
+	}
+
+	.sidenav .github-icon:before {
+		font-size: var(--20px);
+	}
+
+	.sidenav .angellist-icon:before {
+		font-size: var(--20px);
 	}
 
 
@@ -1291,10 +1378,45 @@ Ems are the best option for media queries
 		font-size: var(--26p66px);
 	}
 
+
+	.tech-icons h2 {
+		font-size: var(--25px);
+	}
+
 	.tech-icons img {
 		width: 52px;
 	
 	}
+
+	.mediaquery-at-736px i{
+		font-size: var(--20px);
+	}
+
+	.projects h2 {
+		font-size: var(--25px);
+	}
+
+	.projects h3 {
+		font-size: var(--18px)
+	}
+
+	.projects p, .projects strong {
+		font-size: var(--14p66px);
+	}
+
+	.projects .button {
+		font-size: var(--11p88px);
+	}
+
+
+	.services h2 {
+		font-size: var(--25px);
+	}
+
+	.services h3 {
+		font-size: var(--18px);
+	}
+
 
 }
 
@@ -1305,6 +1427,7 @@ Ems are the best option for media queries
 		width: 450px;
 	}
 
+
 	.special {
 		left: 460px;
 	}
@@ -1312,7 +1435,81 @@ Ems are the best option for media queries
 
 
 	.tech-icons img {
-		width: 55px;
+		width: 65px;
 	
+	}
+
+	.sidenav h3 {
+		font-size: var(--21p66px);
+	}
+
+	.sidenav p {
+		font-size: var(--15px);
+	}
+
+	.sidenav span {
+		font-size: var(--15px);
+	}
+
+	.mediaquery-at-736px a {
+		font-size: var(--19p5px);
+	}
+
+	main h1 {
+		font-size: var(--69px);
+	}
+
+	main p {
+		font-size: var(--17p33px);
+	}
+
+	main .button {
+		font-size: var(--13p33px);
+	}
+
+	.tech-icons h2 {
+		font-size: var(--30px);
+
+	}
+
+	.services h2 {
+		font-size: var(--30px);
+	} 
+
+	.service h3 {
+		font-size: var(--21p66px);
+	}
+
+	.services p {
+		font-size: var(--17p33px);
+	}
+
+	.projects h2 {
+		font-size: var(--30px);
+
+	}
+
+	.projects h3 {
+		font-size: var(--21p66px);
+	}
+
+	.projects p, .projects strong{
+		font-size: var(--17p33px);
+	}
+
+	.projects .button {
+		font-size: var(--13p33px);
+	}
+
+	div .project {
+		width: 28%;
+	}
+
+	.about-me p {
+		font-size: var(--17p33px);
+	}
+
+	.about-me .button-resume{
+		font-size: var(--11p88px);
 	}
 }
